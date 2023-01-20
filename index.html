@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advinha o número</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Js-->
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <!--CAbecalho-->
+    <header>
+        <a href="#"><h1>Advinhe o número</h1> </a>
+    </header>
+
+    <!--Principal-->
+    <main class="container">
+
+        <form id="form">
+            <label for="kick">Chute um número de 0 a 10</label>
+            <input type="Number" id="kick" max="10" placeholder="0">
+
+            <button type="submit">Jogar!</button>
+        </form> 
+
+        <section class="result" id="result">
+
+            <h2 id="status">Advinhe o número sorteado</h2>
+            <span id="attempt"> Tentativas = 0</span>
+        </section>
+
+        <button id="btnRestart" onclick= 'restart()'>Jogar de novo!</button>
+    </main>
+
+    <footer>
+        <p>&copy; Advinhe o número - Vitor Gustavo - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
